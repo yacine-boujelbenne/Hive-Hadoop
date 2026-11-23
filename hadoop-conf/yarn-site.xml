@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<configuration>
+  <property><name>yarn.resourcemanager.hostname</name><value>resourcemanager</value></property>
+  <property><name>yarn.resourcemanager.bind-host</name><value>0.0.0.0</value></property>
+  <property><name>yarn.nodemanager.aux-services</name><value>mapreduce_shuffle</value></property>
+  <property><name>yarn.nodemanager.env-whitelist</name><value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ,HADOOP_MAPRED_HOME</value></property>
+  <property><name>yarn.nodemanager.resource.memory-mb</name><value>3072</value></property>
+  <property><name>yarn.nodemanager.resource.cpu-vcores</name><value>2</value></property>
+  <property><name>yarn.scheduler.minimum-allocation-mb</name><value>128</value></property>
+  <property><name>yarn.scheduler.maximum-allocation-mb</name><value>3072</value></property>
+  <property><name>yarn.nodemanager.vmem-check-enabled</name><value>false</value></property>
+  <!-- Keep at least 1 GiB free for NodeManager temporary files. -->
+  <property><name>yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb</name><value>1024</value></property>
+</configuration>
