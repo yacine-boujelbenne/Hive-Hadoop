@@ -1,6 +1,6 @@
 # Hive–Hadoop TP2 Data Lakehouse
 
-A reproducible Apache Hadoop, Hive, PostgreSQL and Spark environment implementing the TP2 laboratory from Docker setup through Hive fundamentals and storage optimization.
+A reproducible Apache Hadoop, Hive and PostgreSQL environment implementing the TP2 laboratory from Docker setup through Hive fundamentals and storage optimization.
 
 ## Current validated state
 
@@ -44,7 +44,6 @@ MapReduce / YARN execution
 ├── hadoop.env                  Hadoop environment variables
 ├── hadoop-conf/                Hadoop and YARN XML configuration
 ├── hive-conf/hive-site.xml     Hive Metastore and warehouse settings
-├── spark-conf/                 Spark configuration
 ├── postgres-jdbc.jar           PostgreSQL JDBC driver used by Hive
 ├── data_to_import/             Source CSV files
 ├── sql/
@@ -150,7 +149,7 @@ docker exec namenode /opt/hadoop-3.2.1/bin/hdfs dfs -cat /user/hive/warehouse/jo
 
 ### YARN
 
-YARN schedules MapReduce, Hive, Spark and Tez applications.
+YARN schedules MapReduce, Hive and Tez applications.
 
 - ResourceManager UI: http://localhost:8088
 - NodeManager UI: http://localhost:8042
